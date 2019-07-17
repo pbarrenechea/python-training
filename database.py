@@ -1,5 +1,7 @@
 	
 import sqlite3
+
+
 db = sqlite3.connect('data/mydb')
 cursor = db.cursor()
 sql = 'create table if not exists todos (id  integer primary key, todo text, finished integer)'
